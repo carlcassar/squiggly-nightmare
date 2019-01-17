@@ -1,0 +1,64 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+// Variables
+@import 'variables';
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+html, body, #app {
+  background-color: #fff;
+  color: #636b6f;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 200;
+  height: 100vh;
+  margin: 0;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.blink {
+  animation: blinker 3s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.colours {
+  animation: colours 1s linear infinite;
+}
+
+@keyframes colours {
+  0% {
+    background-color: #39f;
+  }
+  15% {
+    background-color: #8bc5d1;
+  }
+  30% {
+    background-color: #f8cb4a;
+  }
+  45% {
+    background-color: #95b850;
+  }
+  60% {
+    background-color: #944893;
+  }
+  75% {
+    background-color: #c71f00;
+  }
+  90% {
+    background-color: #bdb280;
+  }
+  100% {
+    background-color: #39f;
+  }
+}
